@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media only screen and (min-width: 568px) and (max-width: 767px) {
+
+.wrapper { width:98%; margin:0px auto;}
+.container { width:100%;}
+
+}

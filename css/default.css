@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0;
+outline: 0; font-size: 100%; font: inherit; vertical-align: baseline;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+body { line-height: 1; }
+:focus { outline:0; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none;}
+/* remember to highlight inserts somehow! */
+ins { text-decoration: none; }
+del { text-decoration: line-through; }
+table {border-collapse: collapse; border-spacing: 0;}
+caption, th, td {text-align:left; font-weight:400;}
+audio, canvas, img, video { vertical-align: middle; }
+fieldset {border: 0; margin: 0; padding: 0;}
+/* WebKit browsers */
+*::-webkit-input-placeholder {color:#2f2f2f; opacity:1;}
+*:-moz-placeholder {color:#2f2f2f; opacity:1;}
+*::-moz-placeholder {color:#2f2f2f; opacity:1;}
+*:-ms-input-placeholder {color:#2f2f2f; opacity:1;}
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {color:transparent;}
+input:focus:-moz-placeholder, textarea:focus:-moz-placeholder {color:transparent;}
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {color:transparent;}
+input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder {color:transparent;}
+
+.left { float:left; }
+.right { float:right; }
+.clearfix:after {content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+.noFloat { float:none; }
+.hidden {position: absolute; top:0; visibility: hidden;}
+.pointer { cursor:pointer; }
+a {text-decoration: none;outline: 0;max-width:100%; max-width:none\9; color: #e54c4c;}
+a:hover, a:focus, a:visited {outline: 0; text-decoration: underline;}
+p a, p a:visited { line-height: inherit; }
+ul, ol {margin: 0 0 20px 0; list-style-position: inside;}
+ul { list-style: none; }
+ul li { list-style: none; }
+ol { list-style-type: decimal; }
+ol ol { list-style: upper-alpha; }
+ol ol ol { list-style: lower-roman; }
+ol ol ol ol { list-style: lower-alpha; }
+ul ul, ol ol, ul ol, ol ul { margin-bottom: 0; }
+*{-webkit-transition: all 0.3s; transition: all 0.3s; -moz-transition: all 0.3s; -ms-transition: all 0.3s;}
+ 
+/*-------------------------------------------------------
+ #Typography
+ -------------------------------------------------------*/
+body {font-size:14px; font-family:Arial, Helvetica, sans-serif; line-height:1.3em;}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 {/*Heading Styles*/font-weight: 600;margin: 0;}
+h1, .h1 {font-size:2.6em; margin-bottom:16px; line-height: 1.1em;}
+h2, .h2 {font-size:2.2em; margin-bottom:15px; line-height: 1.1em;}
+h3, .h3 {font-size:1.8em; margin-bottom:14px; line-height: 1.1em;}
+h4, .h4 {font-size:1.4em; margin-bottom:13px; line-height: 1.1em;}
+h5, .h5 {font-size:1em; margin-bottom:12px; line-height: 1.1em;}
+p + h1, p + h2, p + h3, p + h4, p + h5, p + h6 { margin-top:1.5em; }
+p {margin: 0.85em 0; line-height:20px;}
+p img { margin: 0; }
+img, a img {border:none; padding: 0; margin:0; display:inline-block; max-width: 100%; height:auto; image-rendering: optimizeQuality;}
+em { font-style: italic; }
+strong, b { font-weight: bold; }
+small { font-size: 80%; }
+/*-------------------------------------------------------
+ Forms
+ -------------------------------------------------------*/
+ 
+form { margin-bottom: 20px; }
+fieldset { margin-bottom: 20px; }
+.input-text, input[type="text"], input[type="input"], input[type="password"], input[type="email"], input[type="number"], input[type="url"], input[type="tel"], input[type="search"], textarea, select {-webkit-appearance: none; border: 1px solid #e1e1e1; padding: 8px 6px; outline: none; color: #777; margin: 0; width: 380px;
+max-width: 100%; display: block; margin-bottom: 20px; background: #fff; border-radius: 0px;}
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="url"]:focus, input[type="tel"]:focus, input[type="search"]:focus, textarea:focus {box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.2); color: #555;}
+input[type="submit"], #submit, .button {padding:9px 22px; cursor:pointer; border:none; -webkit-appearance: none; border-radius: 0px;}
+textarea {min-height: 60px; line-height:1.5em;}
+label {display: block; font-weight: bold;font-size: 12px;}
+legend {display: block; font-weight: normal; font-size: 15px;}
+select { width: 220px; }
+input[type="checkbox"], input[type="radio"] { display: inline; }
+label span, legend span {font-weight: normal;font-size: 13px;color: #444;}
+textarea { width:100%; }
+
+/*------------------------------------------------------- 
+ #Table
+ -------------------------------------------------------*/
+table {width: 100%;padding: 0; margin: 0 0 20px 0; font-size: 13px; color: #5c5c5c;   font-family: 'roboto_slabregular';}
+table caption {padding: 0 0 5px 0; width: auto; font-style:italic; text-align: right; font-size: 12px;}
+th {font-weight:bold;letter-spacing: 1px;text-transform: uppercase;text-align: left;padding: 9px 12px;border-style: solid;border-width: 1px;border-left:none;border-top:none;}
+td {font-size: 13px;padding: 9px 12px;border-style: solid;border-width: 1px; border-color:#d2d2d2;border-left:none;border-top:none;}
+tr th:first-child, tr td:first-child{border-color:#d2d2d2; border-left-style: solid;border-left-width: 1px;}
+tr:first-child th, tr:first-child td{  border-color:#d2d2d2; border-top-style: solid;border-top-width: 1px;}
+
+/*------------------------------------------------------- 
+ #Layout Styles
+ -------------------------------------------------------*/
+html, body {width:100%; height:100%;}
+#container {width:100%;height:auto; /* real browsers */height:100%; /* IE6: treaded as min-height*/min-height:100%; /* real browsers */margin:0 auto; /* center, not in IE5 */position:relative; /* needed for footer positioning*/}
+
+
